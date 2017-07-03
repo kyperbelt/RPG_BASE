@@ -1,0 +1,145 @@
+
+character.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+male_walk_down
+  rotate: false
+  xy: 1, 9
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: 0
+male_walk_down
+  rotate: false
+  xy: 52, 9
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: 1
+male_walk_down
+  rotate: false
+  xy: 52, 9
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: 3
+male_walk_down
+  rotate: false
+  xy: 103, 9
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: 2
+male_walk_left
+  rotate: false
+  xy: 154, 9
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: 0
+male_walk_left
+  rotate: false
+  xy: 205, 9
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: 1
+male_walk_left
+  rotate: false
+  xy: 205, 9
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: 3
+male_walk_left
+  rotate: false
+  xy: 256, 9
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: 2
+male_walk_right
+  rotate: false
+  xy: 307, 9
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: 0
+male_walk_right
+  rotate: false
+  xy: 358, 9
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: 1
+male_walk_right
+  rotate: false
+  xy: 358, 9
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: 3
+male_walk_right
+  rotate: false
+  xy: 409, 9
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: 2
+male_walk_up
+  rotate: false
+  xy: 460, 9
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: 0
+male_walk_up
+  rotate: false
+  xy: 511, 9
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: 1
+male_walk_up
+  rotate: false
+  xy: 562, 9
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: 2
+male_walk_up
+  rotate: false
+  xy: 613, 9
+  size: 49, 49
+  orig: 49, 49
+  offset: 0, 0
+  index: 3
+noregion
+  rotate: false
+  xy: 664, 26
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+chest_01_down
+  rotate: false
+  xy: 698, 34
+  size: 34, 24
+  orig: 34, 24
+  offset: 0, 0
+  index: -1
+legs_01_down
+  rotate: false
+  xy: 664, 9
+  size: 17, 15
+  orig: 17, 15
+  offset: 0, 0
+  index: -1
+boot_01_down
+  rotate: false
+  xy: 1, 1
+  size: 21, 6
+  orig: 21, 6
+  offset: 0, 0
+  index: -1
