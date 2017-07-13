@@ -1,27 +1,28 @@
 package com.rpg.game.nodes.kfa;
 
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasSprite;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ObjectMap;
-import com.rpg.game.assets.AtlasWrapper;
 import com.rpg.game.nodes.GameNode;
 import com.rpg.game.nodes.SpriteNode;
-import com.rpg.game.utils.RpgUtils;
 
 public class KeyFrame {
 	
 	protected static final int VOID = -999;
+	public static int VISIBLE = 1;
+	public static int INVISIBLE = 0;
 	
 	private KeyFrameNode kfn;
 	
 	private ObjectMap<String, NodeTransform> transforms;
-	
-	private AtlasWrapper atlas;
 	
 	private float last_for;
 	
 	public KeyFrame(){
 		last_for = .25f;
 		transforms = new ObjectMap<String, NodeTransform>();
+		
 	}
 	
 	public void setKFN(KeyFrameNode kfn){
@@ -30,6 +31,10 @@ public class KeyFrame {
 	
 	public void setLastFor(float last_for){
 		this.last_for = last_for;
+	}
+	
+	public ObjectMap<String,NodeTransform> getTransforms(){
+		return transforms;
 	}
 	
 	public float getLastFor(){
@@ -47,8 +52,7 @@ public class KeyFrame {
 			if(transforms.containsKey(node.getName())){
 				NodeTransform nt = transforms.get(node.getName());
 				if(nt.region != null){
-					node.setTextureRegion(nt.region);
-					
+					node.setTextureRegion(new AtlasSprite(nt.region));
 				}
 				if(nt.x!=VOID){
 					node.setPosition(nt.x, node.getY());
@@ -68,6 +72,15 @@ public class KeyFrame {
 				if(nt.originy!=VOID){
 					node.setOrigin(node.originX(), nt.originy);
 				}
+				if(nt.visible!=VOID){
+					if(nt.visible == VISIBLE){
+						node.setVisible(true);
+					}else{
+						node.setVisible(false);
+					}
+				}
+				Color tint = new Color(nt.tint);
+				node.setTint(tint);
 			}
 			transforms.get(node.getName());
 		}

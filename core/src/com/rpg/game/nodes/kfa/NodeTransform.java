@@ -1,11 +1,11 @@
 package com.rpg.game.nodes.kfa;
 
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
 
 public class NodeTransform {
 	
-	public TextureRegion region;
+	public AtlasRegion region;
 	public float x;
 	public float y;
 	public float originx;
@@ -16,6 +16,8 @@ public class NodeTransform {
 	public float width;
 	public float height;
 	public Color tint;
+	public int visible;
+	public float alpha;
 	
 	public NodeTransform(){
 		region = null;
@@ -28,6 +30,9 @@ public class NodeTransform {
 		angle = KeyFrame.VOID;
 		width = KeyFrame.VOID;
 		height = KeyFrame.VOID;
+		visible = KeyFrame.VOID;
+		tint = Color.WHITE;
+		alpha = KeyFrame.VOID;
 		
 	}
 	

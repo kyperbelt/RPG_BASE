@@ -43,11 +43,17 @@ public class KeyFrameNode extends BasicNode{
 	
 	@Override
 	public float getX() {
-		return getParent().getX()+getX();
+		if(getParent()!=BasicNode.NULL)
+			return getParent().getX()+x;
+		else
+			return super.getX();
 	}
 	
 	public float getY(){
-		return getParent().getY()+getY();
+		if(getParent()!=BasicNode.NULL)
+		return getParent().getY()+y;
+		else
+			return super.getY();
 	}
 	
 	@Override

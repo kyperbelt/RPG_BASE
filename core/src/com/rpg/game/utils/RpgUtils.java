@@ -61,6 +61,15 @@ public class RpgUtils {
 		Gdx.app.log("NODE["+node.getName()+"]", "\n\t"
 				+ "children:"+node.getChildren().size+"\n\t\t"+node.getChildren().toString("\n\t\t"));
 	}
+	
+	public static Array<String> getChildrenNames(GameNode node){
+		Array<String> names = new Array<String>();
+		for (int i = 0; i < node.getChildren().size; i++) {
+			names.add(node.getChildren().get(i).getName());
+		}
+		return names;
+		
+	}
 	/**
 	 * clamp a number within the given parameters
 	 * @return

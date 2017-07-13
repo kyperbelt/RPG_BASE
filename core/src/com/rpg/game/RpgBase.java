@@ -19,7 +19,6 @@ import com.rpg.game.utils.Keybinds;
 import com.rpg.game.utils.PhysWorld;
 import com.rpg.game.utils.RpgUtils;
 import com.rpg.game.utils.SoundManager;
-import com.rpgbase.tests.AnimationEditor;
 
 public class RpgBase extends Game {
 
@@ -66,7 +65,7 @@ public class RpgBase extends Game {
 		assets.finishLoading();
 
 		
-		addMode("gamemode", new AnimationEditor());
+		addMode("gamemode", new GameMode());
 		setMode("gamemode");
 	}
 	

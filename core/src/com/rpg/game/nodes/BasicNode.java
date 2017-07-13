@@ -18,8 +18,8 @@ public class BasicNode implements GameNode{
 	private Array<GameNode> children;
 	
 	//position data
-	private float x;
-	private float y;
+	protected float x;
+	protected float y;
 	private float originx;
 	private float originy;
 	private float angle;

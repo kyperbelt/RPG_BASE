@@ -12,7 +12,7 @@ public class Configuration {
 	//defaults
 	public static final String TITLE = "RPG_BASE";
 	public static final String VERSION = "v0.0.0";
-	public static final int WIDTH = 800;
+	public static final int WIDTH = 854;
 	public static final int HEIGHT = 600;
 	
 	//app
